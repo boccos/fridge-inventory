@@ -1,2 +1,2 @@
 # landing-page
-web page design by me
+simple web page design by me using HTML/CSS
