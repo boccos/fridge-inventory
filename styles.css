@@ -4,6 +4,7 @@
     color: azure;
 }
 
-.headerlinks{
-    text-decoration-style: none;
+.headerlinks a{
+    text-decoration: none;
+
 }
