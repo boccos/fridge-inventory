@@ -1,72 +1,105 @@
-.header{
+.header {
     font-family: Roboto;
     background-color: #1f2937;
     color: azure;
+    padding: 40px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+
 }
 
-.headerLogo{
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: max-content;
+}
+
+.headerLogo {
     font-size: 24px;
-    color: #f9faf8
+    color: #f9faf8;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 150px;
 }
 
-a, .headerText{
+.headerLinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1 0 auto;
+    min-width: 300px;
+    min-height: 40px;
+}
+
+a {
+    text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
 }
 
-a{
-    text-decoration: none;
+.headerMiddle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    min-width: max-content;
 }
 
-.headerTitle{
+.headerTitle {
     font-size: 48px;
     color: #f9faf9;
     font-weight: 900;
 }
 
-.bodyTitle{
+.headerText {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.headerImage {
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E5E7EB;
+}
+
+.bodyTitle {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
 }
 
-.action{
+.action {
     background-color: #3882f6;
 }
 
-.quote{
+.quote {
     background-color: #E5E7EB;
 }
 
-.quoteText{
+.quoteText {
     font-size: 36px;
     color: #1f2937;
     font-weight: 300;
 }
 
-.infoTitle{
+.infoTitle {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
 }
 
-.footer{
+.footer {
     background-color: #1f2937;
     color: azure;
-}
-
-.header{
-    display: flex;
-    flex-direction: column;
-}
-
-.headerTop{
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerLogo, .headerLinks{
-    display: flex;
-    margin: 20px 200px 20px 200px;
-    gap: 20px;
 }
