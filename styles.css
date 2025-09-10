@@ -54,3 +54,19 @@ a{
     background-color: #1f2937;
     color: azure;
 }
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo, .headerLinks{
+    display: flex;
+    margin: 20px 200px 20px 200px;
+    gap: 20px;
+}
