@@ -34,8 +34,23 @@ a{
     background-color: #3882f6;
 }
 
+.quote{
+    background-color: #E5E7EB;
+}
+
+.quoteText{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+}
+
 .infoTitle{
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+}
+
+.footer{
+    background-color: #1f2937;
+    color: azure;
 }
