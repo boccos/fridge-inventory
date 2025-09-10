@@ -29,3 +29,13 @@ a{
     color: #1f2937;
     font-weight: 900;
 }
+
+.action{
+    background-color: #3882f6;
+}
+
+.infoTitle{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
