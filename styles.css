@@ -193,12 +193,12 @@ button{
 .quoteText {
     font-size: 20px;
     font-weight: lighter;
-    color: lightgray;
+    color: #e5e5e5;
     text-align: left;
 }
 .quoteRef{
     text-align: right;
-    color: lightgray;
+    color: #e5e5e5;
 }
 
 .action {
