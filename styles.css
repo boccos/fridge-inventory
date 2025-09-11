@@ -1,3 +1,9 @@
+body{
+    overflow-x: auto;
+    width: max-content;
+    min-width: 100%;
+}
+
 .header {
     font-family: Roboto;
     background-color: #1f2937;
@@ -6,16 +12,15 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    
-
 }
 
 .headerTop {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: nowrap;
     min-width: max-content;
+    margin-bottom: 40px;
 }
 
 .headerLogo {
@@ -44,36 +49,48 @@ a {
 
 .headerMiddle {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: nowrap;
     min-width: max-content;
+    margin-bottom: 20px;
 }
 
 .headerTitle {
     font-size: 48px;
     color: #f9faf9;
     font-weight: 900;
+    margin-bottom: 20px;
 }
 
 .headerText {
+    align-items: start;
     color: #E5E7EB;
     font-size: 18px;
     margin-top: 10px;
 }
 
 .headerImage {
-    min-width: 250px;
-    min-height: 150px;
-    background-color: #334155;
+    min-width: 400px;
+    min-height: 180px;
+    background-color: darkblue;
     display: flex;
     align-items: center;
+    margin-top: 20px;
     justify-content: center;
     color: #E5E7EB;
 }
 
-.bodyTitle {
+button{
+    border: none;
+    background-color: #3882f6;
+    padding: 10px 30px;
+    border-radius: 10%;
+    color: #f9faf8;
+}
+
+.centerTitle {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
