@@ -8,7 +8,7 @@ body{
     font-family: Roboto;
     background-color: #1f2937;
     color: azure;
-    padding: 40px 300px;
+    padding: 0 300px 120px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -18,7 +18,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    flex-wrap: nowrap;
     min-width: max-content;
     margin-bottom: 40px;
 }
@@ -59,7 +58,7 @@ a {
 
 .headerTitle {
     font-size: 48px;
-    color: #f9faf9;
+    color: #f9faf8;
     font-weight: 900;
     margin-bottom: 20px;
 }
@@ -69,15 +68,17 @@ a {
     color: #E5E7EB;
     font-size: 18px;
     margin-top: 10px;
+    max-width: 400px;
 }
 
 .headerImage {
     min-width: 400px;
-    min-height: 180px;
+    min-height: 220px;
     background-color: darkblue;
     display: flex;
     align-items: center;
     margin-top: 20px;
+    margin-left: 40px;
     justify-content: center;
     color: #E5E7EB;
 }
@@ -86,37 +87,111 @@ button{
     border: none;
     background-color: #3882f6;
     padding: 10px 30px;
-    border-radius: 10%;
+    border-radius: 10px;
     color: #f9faf8;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
 }
 
 .centerTitle {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    margin: 10px 40px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 60px;
+}
+
+.images img {
+    width: 220px;
+    height: 180px;
+    display: block;
+}
+
+.quote {
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    padding: 20px;
+}
+
+.quoteBox {
+    padding: 32px 48px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.quoteText {
+    font-size: 20px;
+    font-weight: lighter;
+    color: gray;
+    text-align: left;
+}
+.quoteRef{
+    text-align: right;
+    color: gray;
 }
 
 .action {
     background-color: #3882f6;
+    color: #f9faf8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    border-radius: 16px;
+    margin: 40px auto;
+    max-width: 500px;
+    min-height: 0;
+    gap: 24px;
 }
 
-.quote {
-    background-color: #E5E7EB;
+.actionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 0;
 }
 
-.quoteText {
-    font-size: 36px;
-    color: #1f2937;
-    font-weight: 300;
+.actionButtonBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.infoTitle {
-    font-size: 36px;
-    color: #1f2937;
-    font-weight: 900;
+.actionButton {
+    border: solid #f9faf8;
+    color: #3882f6;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .footer {
     background-color: #1f2937;
     color: azure;
+    padding: 20px;
+    text-align: center;
 }
