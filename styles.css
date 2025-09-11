@@ -1,9 +1,8 @@
-body{
+body {
     overflow-x: auto;
-    width: max-content;
-    min-width: 100%;
     font-family: Roboto;
     margin: 0;
+    background-color: #222c3a;
 }
 
 .header {
@@ -18,18 +17,32 @@ body{
 .headerTop {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    min-width: max-content;
+    align-items: center;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 
 .headerLogo {
-    font-size: 24px;
-    color: #f9faf8;
     display: flex;
     align-items: center;
-    flex: 1;
-    min-width: 150px;
+    gap: 10px;
+}
+
+.headerLogo img {
+    height: 48px;
+    width: 48px;
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+.headerLogo h2 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 24px;
+    color: #f9faf8;
+    font-family: inherit;
+    font-weight: 700;
 }
 
 .headerLinks {
@@ -39,6 +52,11 @@ body{
     flex: 1 0 auto;
     min-width: 300px;
     min-height: 40px;
+}
+
+.headerLinks a {
+    font-size: 22px;
+    padding: 4px 18px;
 }
 
 a {
@@ -93,16 +111,19 @@ button{
 .center{
     display: flex;
     flex-direction: column;
+    background-color: #273c5a;
+    color: #f9faf8;
+    padding: 60px 0;
 }
 
 .centerTitle {
     font-size: 36px;
     font-style: italic;
     text-decoration: underline;
-    color: #1f2937;
+    color: #f9faf8;
     font-weight: 900;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 100px;
 }
 
@@ -119,6 +140,21 @@ button{
     align-items: center;
     gap: 12px;
     margin-bottom: 60px;
+    position: relative;
+}
+
+.image-credit {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: rgba(34,44,58,0.7);
+    color: #f9faf8;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    max-width: 90%;
+    pointer-events: none;
+    z-index: 2;
 }
 
 .images img {
@@ -127,11 +163,19 @@ button{
     display: block;
     object-fit: cover;
     object-position: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.images p {
+    max-width: 300px;
+    width: 100%;
+    font-size: 20px;
 }
 
 .quote {
     display: flex;
-    background-color: #E5E7EB;
+    background-color: #7d7d7d;
     justify-content: center;
     padding: 20px;
     margin: 60px 0px;
@@ -149,12 +193,12 @@ button{
 .quoteText {
     font-size: 20px;
     font-weight: lighter;
-    color: gray;
+    color: lightgray;
     text-align: left;
 }
 .quoteRef{
     text-align: right;
-    color: gray;
+    color: lightgray;
 }
 
 .action {
@@ -209,4 +253,22 @@ button{
     color: azure;
     padding: 20px;
     text-align: center;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 4px;
+}
+
+.footerLinks a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.footerLinks a:hover {
+    color: #f9faf8;
 }
