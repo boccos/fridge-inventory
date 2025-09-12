@@ -22,12 +22,10 @@ body {
     margin-bottom: 40px;
 }
 
-.headerLogo a.homeLink {
+.headerLogo {
     display: flex;
     align-items: center;
     gap: 10px;
-    text-decoration: none;
-    color: #f9faf8;
 }
 
 .headerLogo img {
@@ -60,7 +58,6 @@ body {
     padding: 4px 18px;
     text-decoration: none;
     color: #E5E7EB;
-    transition: color 0.3s ease;
 }
 
 .headerLinks a:hover {
