@@ -58,6 +58,9 @@ body {
     font-size: 22px;
     padding: 4px 18px;
 }
+.headerLinks a:hover {
+    color: #a3a3a3;
+}
 
 a {
     text-decoration: none;
@@ -108,6 +111,10 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #2d66c3;
+}
+
 .center{
     display: flex;
     flex-direction: column;
@@ -118,7 +125,6 @@ button{
 
 .centerTitle {
     font-size: 36px;
-    font-style: italic;
     text-decoration: underline;
     color: #f9faf8;
     font-weight: 900;
@@ -149,6 +155,7 @@ button{
     color: #f9faf8;
     font-size: 12px;
     padding: 2px 8px;
+    position: absolute;
 }
 
 .images img {
@@ -221,6 +228,10 @@ button{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.actionButton:hover {
+    background-color: #2d66c3;
 }
 
 .action input[type="text"] {

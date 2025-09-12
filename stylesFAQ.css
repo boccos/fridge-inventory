@@ -1,0 +1,133 @@
+body {
+    overflow-x: auto;
+    font-family: Roboto;
+    margin: 0;
+    background-color: #222c3a;
+}
+
+.header {
+    background-color: #1f2937;
+    color: azure;
+    padding: 0 300px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerLogo img {
+    height: 48px;
+    width: 48px;
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+.headerLogo h2 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 700;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1 0 auto;
+    min-width: 300px;
+    min-height: 40px;
+}
+
+.headerLinks a {
+    font-size: 22px;
+    padding: 4px 18px;
+    text-decoration: none;
+    color: #E5E7EB;
+    transition: color 0.3s ease;
+}
+
+.headerLinks a:hover {
+    color: #a3a3a3;
+}
+
+.headerLinks a.currentPage {
+    color: #888888;
+    pointer-events: none;
+    cursor: default;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    background-color: #273c5a;
+    color: #f9faf8;
+    padding: 60px 0;
+    align-items: center;
+}
+
+.centerTitle {
+    font-size: 36px;
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background-color: #273c5a;
+    border-radius: 12px;
+    padding: 20px 24px;
+    max-width: 800px;
+    width: 90%;
+    margin-bottom: 24px;
+}
+
+.faq-item h4 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+.faq-item p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 4px;
+}
+
+.footerLinks a {
+    color: #f9faf8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footerLinks a:hover {
+    color: #a3a3a3;
+}
