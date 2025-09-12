@@ -1,5 +1,5 @@
 # landing-page
-simple web page design by me using HTML/CSS
+simple web page design by me using HTML/CSS/JS
 
 
 Image Credits:
