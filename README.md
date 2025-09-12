@@ -3,6 +3,7 @@ simple web page using HTML/CSS/JS
 
 
 Image Credits:
+
 “Japanese Soufflé Pancakes” — Food & Wine (Photo: Gregory DuPree)
 Source: foodandwine.com
 
