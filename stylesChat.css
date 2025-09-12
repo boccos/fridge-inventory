@@ -1,0 +1,171 @@
+body {
+    overflow-x: auto;
+    font-family: Roboto;
+    margin: 0;
+    background-color: #222c3a;
+}
+
+.header {
+    background-color: #1f2937;
+    color: azure;
+    padding: 0 300px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.headerLogo a.homeLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+.headerLogo img {
+    height: 48px;
+    width: 48px;
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+.headerLogo h2 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 700;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1 0 auto;
+    min-width: 300px;
+    min-height: 40px;
+}
+
+.headerLinks a {
+    font-size: 22px;
+    padding: 4px 18px;
+    text-decoration: none;
+    color: #E5E7EB;
+    transition: color 0.3s ease;
+}
+
+.headerLinks a:hover {
+    color: #a3a3a3;
+}
+
+.headerLinks a.currentPage {
+    color: #888888;
+    pointer-events: none;
+    cursor: default;
+}
+
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #273c5a;
+    color: #f9faf8;
+    padding: 60px 0;
+    align-items: center;
+}
+
+.centerTitle {
+    font-size: 36px;
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.chatBox {
+    width: 80%;
+    max-width: 700px;
+    height: 400px;
+    background-color: #f9faf8;
+    border-radius: 12px;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.chatBox .message {
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.chatBox .userMessage {
+    background-color: #3882f6;
+    align-self: flex-end;
+}
+
+.chatBox .botMessage {
+    background-color: #4a5568;
+    align-self: flex-start;
+}
+
+.chatInputContainer {
+    display: flex;
+    width: 80%;
+    max-width: 700px;
+    gap: 12px;
+    margin-bottom: 60px;
+}
+
+.chatInputContainer input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.chatInputContainer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 4px;
+}
+
+.footerLinks a {
+    color: #f9faf8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footerLinks a:hover {
+    color: #a3a3a3;
+}
