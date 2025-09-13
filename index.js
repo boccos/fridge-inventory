@@ -1,8 +1,13 @@
 const imgs = document.querySelectorAll(".fridgeIcon");
+
 imgs.forEach(img => {
-    img.addEventListener("mouseover", () => img.src = "/images/Fridge-open.png");
-    img.addEventListener("mouseout", () => img.src = "/images/Fridge.png");
+    const originalSrc = img.src;
+    const hoverSrc = originalSrc.replace("Fridge.png", "Fridge-open.png");
+
+    img.addEventListener("mouseover", () => img.src = hoverSrc);
+    img.addEventListener("mouseout", () => img.src = originalSrc);
 });
+
 
 
 function redir(buttonId){
