@@ -1,5 +1,6 @@
 # landing-page
 simple web page using HTML/CSS/JS
+
 learning how to implement LLM api into web pages
 
 
