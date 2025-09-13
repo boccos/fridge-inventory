@@ -95,7 +95,7 @@ a {
 
 .headerImage img {
     width: 320px;
-    height: 260px;
+    height: 320px;
     object-fit: cover;
     object-position: center;
     display: block;
