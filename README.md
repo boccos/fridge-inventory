@@ -1,7 +1,7 @@
 # landing-page
 simple web page using HTML/CSS/JS
 
-learning how to implement LLM api into web pages
+https://boccos.github.io/fridge-inventory/
 
 
 Image Credits:
