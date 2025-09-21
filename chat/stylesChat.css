@@ -75,7 +75,9 @@ body {
     flex-direction: column;
     background-color: #273c5a;
     color: #f9faf8;
-    padding: 60px 0;
+    padding: 1.25em;      
+    margin: 1.25em auto;  
+    max-width: 50em;      
     align-items: center;
 }
 
@@ -93,8 +95,9 @@ body {
     max-width: 700px;
     height: 400px;
     background-color: #f9faf8;
-    border-radius: 12px;
-    padding: 16px;
+    padding: 1.25em;      
+    margin: 0.625em 0;    
+    border-radius: 0.625em; 
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -103,7 +106,8 @@ body {
 }
 
 .chatBox .message {
-    padding: 10px 14px;
+    margin: 0.625em 0;    
+    padding: 0.625em;     
     border-radius: 8px;
     max-width: 80%;
 }
