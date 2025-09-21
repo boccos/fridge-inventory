@@ -75,7 +75,7 @@ body {
     flex-direction: column;
     background-color: #273c5a;
     color: #f9faf8;
-    padding: 60px 0;
+    padding: 3.75em 1.875em;
     align-items: center;
 }
 
@@ -89,11 +89,12 @@ body {
 }
 
 .headerText {
-    max-width: 600px;
-    font-size: 18px;
-    margin-bottom: 40px;
+    max-width: 50em;
+    margin: 1.25em auto;
+    line-height: 1.5;
     text-align: center;
 }
+
 
 .footer {
     background-color: #1f2937;
