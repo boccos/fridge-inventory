@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 difficultyBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 selectedDifficulty = btn.id;
-                console.log('Selected difficulty:', selectedDifficulty); // For debugging
+                console.log('Selected difficulty:', selectedDifficulty);
             });
         });
     }
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadingMsg.classList.add('loading');
         
         try {
-            const response = await fetch('http://localhost:3001/api/recipe', {
+            const response = await fetch('/api/recipe', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
