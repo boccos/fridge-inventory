@@ -1,7 +1,6 @@
 # landing-page
-simple web page using HTML/CSS/JS
+Just a webpage to use when a person encounters the strange but common problem of not knowing what to make to eat.
 
-https://boccos.github.io/fridge-inventory/
 
 
 Image Credits:
