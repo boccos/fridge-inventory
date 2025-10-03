@@ -1,16 +1,35 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const { GoogleGenAI } = require('@google/genai');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static('.'));
-
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
+});
+
+app.get('/chat/chat.html', (req, res) => {
+    const filePath = path.join(__dirname, 'chat', 'chat.html');
+    res.sendFile(filePath);
+});
+
+app.get('/chat/chat.js', (req, res) => {
+    const filePath = path.join(__dirname, 'chat', 'chat.js');
+    res.sendFile(filePath);
+});
+
+app.get('/chat/stylesChat.css', (req, res) => {
+    const filePath = path.join(__dirname, 'chat', 'stylesChat.css');
+    res.sendFile(filePath);
+});
+
+app.get('/images/:filename', (req, res) => {
+    const filePath = path.join(__dirname, 'images', req.params.filename);
+    res.sendFile(filePath);
 });
 
 app.get('/', (req, res) => {
