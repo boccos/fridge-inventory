@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const fs = require('fs');
 const { GoogleGenAI } = require('@google/genai');
 
 const app = express();
@@ -34,6 +33,26 @@ app.get('/images/:filename', (req, res) => {
 
 app.get('/', (req, res) => {
     res.redirect('/chat/chat.html');
+});
+
+app.get('/styles.css', (req, res) => {
+    const filePath = path.join(__dirname, 'styles.css');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving styles.css:', err);
+            res.status(404).send('CSS not found');
+        }
+    });
+});
+
+app.get('/index.js', (req, res) => {
+    const filePath = path.join(__dirname, 'index.js');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving index.js:', err);
+            res.status(404).send('JS not found');
+        }
+    });
 });
 
 app.post('/api/recipe', async (req, res) => {
