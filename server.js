@@ -7,6 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(express.static('.'));
+
 const ai = new GoogleGenAI({});
 
 app.post('/api/recipe', async (req, res) => {
@@ -75,7 +77,13 @@ app.post('/api/recipe', async (req, res) => {
     }
 });
 
-app.listen(3001, () => {
-    console.log('Server running on http://localhost:3001');
-    console.log('Using Gemini 2.5 Flash model');
+app.get('/api/health', (req, res) => {
+    res.json({ status: 'Server is running on Vercel!' });
 });
+
+const port = process.env.PORT || 3001;
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+});
+
+module.exports = app;
