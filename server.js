@@ -13,26 +13,52 @@ const ai = new GoogleGenAI({
 
 app.get('/chat/chat.html', (req, res) => {
     const filePath = path.join(__dirname, 'chat', 'chat.html');
-    res.sendFile(filePath);
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving chat.html:', err);
+            res.status(404).send('Chat page not found');
+        }
+    });
 });
 
 app.get('/chat/chat.js', (req, res) => {
     const filePath = path.join(__dirname, 'chat', 'chat.js');
-    res.sendFile(filePath);
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving chat.js:', err);
+            res.status(404).send('Chat JS not found');
+        }
+    });
 });
 
 app.get('/chat/stylesChat.css', (req, res) => {
     const filePath = path.join(__dirname, 'chat', 'stylesChat.css');
-    res.sendFile(filePath);
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving stylesChat.css:', err);
+            res.status(404).send('Chat CSS not found');
+        }
+    });
 });
 
 app.get('/images/:filename', (req, res) => {
     const filePath = path.join(__dirname, 'images', req.params.filename);
-    res.sendFile(filePath);
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving image:', err);
+            res.status(404).send('Image not found');
+        }
+    });
 });
 
 app.get('/', (req, res) => {
-    res.redirect('/chat/chat.html');
+    const filePath = path.join(__dirname, 'index.html');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving index.html:', err);
+            res.status(404).send('Homepage not found');
+        }
+    });
 });
 
 app.get('/styles.css', (req, res) => {
