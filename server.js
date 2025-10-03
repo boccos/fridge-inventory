@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const { GoogleGenAI } = require('@google/genai');
 
 const app = express();
@@ -10,6 +11,10 @@ app.use(express.static('.'));
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
+});
+
+app.get('/', (req, res) => {
+    res.redirect('/chat/chat.html');
 });
 
 app.post('/api/recipe', async (req, res) => {
