@@ -81,6 +81,46 @@ app.get('/index.js', (req, res) => {
     });
 });
 
+app.get('/about/about.html', (req, res) => {
+    const filePath = path.join(__dirname, 'about', 'about.html');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving about.html:', err);
+            res.status(404).send('About page not found');
+        }
+    });
+});
+
+app.get('/about/stylesAbout.css', (req, res) => {
+    const filePath = path.join(__dirname, 'about', 'stylesAbout.css');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving stylesAbout.css:', err);
+            res.status(404).send('About CSS not found');
+        }
+    });
+});
+
+app.get('/faq/faq.html', (req, res) => {
+    const filePath = path.join(__dirname, 'faq', 'faq.html');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving faq.html:', err);
+            res.status(404).send('FAQ page not found');
+        }
+    });
+});
+
+app.get('/faq/stylesFAQ.css', (req, res) => {
+    const filePath = path.join(__dirname, 'faq', 'stylesFAQ.css');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error serving stylesFAQ.css:', err);
+            res.status(404).send('FAQ CSS not found');
+        }
+    });
+});
+
 app.post('/api/recipe', async (req, res) => {
     console.log('Recipe request received:', req.body);
     
